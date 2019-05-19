@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr" ng-app="vsApp">
+<html lang="pt-BR" dir="ltr"   id="html" ng-app="vsApp">
   <head>
     <meta charset="utf-8">
     <title>HearthStone</title>
@@ -21,7 +21,7 @@
     <!--css min -->
 
   </head>
-  <body>
+  <body ng-controller="dabCtrl">
     <!-- Header -->
     <header>
       <h1>
@@ -126,7 +126,7 @@
       <!-- Formulário -->
       <section class="sec-form">
 
-          <form  name="form"  >
+          <form  name="form" ng-submit="inserir()">
             <fieldset>
               <h2>Formulário</h2>
               <p>asdfasdfasdfasdfasd</p>
@@ -139,16 +139,16 @@
                 <div class="form-group col-sm-6 col-xs-12">
                   <label for="name">
                     Nome
-
+                    <strong role="alert" ng-show="form.name.$error.required">Campo Obrigatório</strong>
                   </label>
-                  <input placeholder="Nome Completo" type="text" id="name" name="name" class="form-control" />
+                  <input placeholder="Nome Completo" type="text" id="name" name="name" class="form-control"  ng-model="name" required />
                 </div>
                 <div class="form-group col-sm-6 col-xs-12">
                   <label for="email">
                     E-mail
-
+                    <strong role="alert" ng-show="form.email.$error.required">Campo Obrigatório</strong>
                   </label>
-                  <input placeholder="seu-email@provedor.com.br" type="email" id="email" name="email"class="form-control" />
+                  <input placeholder="seu-email@provedor.com.br" type="email" id="email" name="email" class="form-control" ng-model="email"  required />
                 </div>
 
               </div>
@@ -157,16 +157,19 @@
 
                   <label for="message">
                     Deixe sua mensagem
-
+                    <strong role="alert" ng-if="message">total de {{message.length}}/50 caracteres</strong>
+                    <strong role="alert" ng-show="form.message.$error.maxlength">Máximo 50 caracteres</strong>
+                    <strong role="alert" ng-show="form.message.$error.required">Campo Obrigatório</strong>
                   </label>
-                  <textarea rows="3" placeholder="Mensagem" name="message" id="message" maxlength="50" class="form-control" ></textarea>
+                  <textarea rows="3" placeholder="Mensagem" name="message" id="message" maxlength="50" class="form-control" ng-maxlength="50" ng-model="message"required ></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12 center">
-                  <input title="Enviar Mensagem" type="submit" value="Enviar"  >
+                  <input title="Enviar Mensagem" type="submit" value="{{btnName}}" ng-disable="form.$invalid"  >
                 </div>
               </div>
+              <div id="aviso" class="{{avisoclass}}"> {{msg}} </div>
             </div>
 
 
@@ -197,9 +200,13 @@
     <!-- JS Modulos - bibliotecas -->
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
 
-
+    <!-- slick -->
     <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/slick/slick-home.js"></script>
+
+    <!-- Angular form-->
+    <script src="assets/js/angular/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/form-angular.js"></script>
 
 
 
