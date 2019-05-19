@@ -3,7 +3,7 @@
 
 
 /*header*/
-header{min-height: 220px;}
+header{min-height: 270px;}
 header .bx-heading        { height: 30px; }
 header .bx-heading img    { height: 40px; position: relative;z-index: 4;}
 header h1 { width: 100%; top: 0;}

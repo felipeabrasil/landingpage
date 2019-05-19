@@ -54,7 +54,7 @@ header h1{
 }
 
 header h1 a,
-header h1 span { position: absolute; width: 100%; }
+header h1 span { position: absolute;}
 header h1 a    {
   z-index: 2;
   top:10rem;
