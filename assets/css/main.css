@@ -11,10 +11,10 @@ body{
   background-repeat: no-repeat;
 }
 
-  main { position: relative; min-height: 400px; width: 100%; }
+  main { position: relative; width: 100%; }
 
   /* section destaque*/
-  main .sec-destaque    { }
+  main .sec-destaque    { padding: 2rem;}
   main .sec-destaque h2 { font-size: 2rem;}
   main .sec-destaque figure figcaption {
     font-size: 1.2rem;
@@ -39,21 +39,26 @@ body{
     position: relative;
     background-color: #e8d7ab;
   }
-
-main .sec-destaque-herois:before,
-main .sec-destaque-herois:after{
-  background-image: url('bg/bg-top.png');
-  background-position: 0 0;
-  width: 100%;
-  height: 35px;
-  display: block;
-  position: absolute;
-  content: "";
-  pointer-events: none;
-  -webkit-transition: all .45s ease-out;
-  transition: all .45s ease-out;
-  z-index: 3;
-}
+  main .sec-destaque-herois h2{
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  main .sec-destaque-herois:before,
+  main .sec-destaque-herois:after{
+    background-image: url('bg/bg-top.png');
+    background-position: 0 0;
+    width: 100%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    -webkit-transition: all .45s ease-out;
+    transition: all .45s ease-out;
+    z-index: 3;
+  }
   main .sec-destaque-herois:before{
     top: -10px;
   }
@@ -64,10 +69,63 @@ main .sec-destaque-herois:after{
        transform: rotate(180deg) translateY(-50%);
 
   }
+/*Add Slick next, prev, box*/
+
+  main .sec-destaque-herois .carousel-controls{ position: relative;z-index: 10;}
+    main .sec-destaque-herois .carousel-controls .prev,
+    main .sec-destaque-herois .carousel-controls .next{ position: absolute; top: 15rem; cursor: pointer;}
+    main .sec-destaque-herois .carousel-controls .prev{ left: 2rem;}
+    main .sec-destaque-herois .carousel-controls .next{ right: 2rem;}
+
+  main .sec-destaque-herois article.slick-slide {
+    overflow: auto;
+    margin: 0 2rem;
+    text-align:center;
+  }
+    main .sec-destaque-herois article.slick-slide h3 { font-size: 1.5rem;text-shadow: -1px 1px 5px rgba(255, 252, 252, 0.7);}
+    main .sec-destaque-herois article.slick-slide figure{ position: relative;}
+    main .sec-destaque-herois article.slick-slide figure img{ width: 100%; max-height:30rem;border-radius: 1rem; }
+    main .sec-destaque-herois article.slick-slide figure figcaption{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 2rem;
+      background-color: #ffffff6b;
+      color: #fff;
+      text-shadow: -1px 1px 5px rgba(0,0,0,.7);
+    }
 /* fim section destaque heróis*/
 
 
 
+/* Formulário */
+main .sec-form { padding: 5rem;}
+main .sec-form form{
+  position: relative;
+  margin: 0 auto;
+  padding: 5rem;
+  width: 80%;
+  display: block;
+  background-color: #fff;
+}
+main .sec-form form fieldset{
+  text-align: center;
+}
+main .sec-form form .container{
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+}
+/* fim Formulário */
+
+/*Footer*/
+
+footer{
+  color:#fff;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: -1px 1px 5px rgba(0,0,0,.7);
+}
 
 
 
@@ -75,4 +133,7 @@ main .sec-destaque-herois:after{
 
 
 
-  .re{}
+
+
+
+/* fim footer */
