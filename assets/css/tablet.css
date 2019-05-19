@@ -1,0 +1,14 @@
+/*800 1024*/
+@media (min-width: 650px) and (max-width: 1024px){
+
+
+  /*header*/
+  header{min-height: 220px;}
+  header .bx-heading        { height: 30px; }
+  header .bx-heading img    { height: 40px; position: relative;z-index: 4;}
+  header h1 { width: 100%; top: 0;}
+  header h1 span{ top: 7rem;  }
+  header h1 span img{ width: 30%;}
+
+
+}

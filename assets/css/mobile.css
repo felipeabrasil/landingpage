@@ -1,0 +1,40 @@
+/*320 640*/
+@media (min-width: 320px) and (max-width: 640px){
+
+
+/*header*/
+header{min-height: 220px;}
+header .bx-heading        { height: 30px; }
+header .bx-heading img    { height: 40px; position: relative;z-index: 4;}
+header h1 { width: 100%; top: 0;}
+header h1 span{ top: 7rem;  }
+header h1 span img{ width: 30%;}
+
+
+/*main*/
+main .sec-destaque h2,
+main .sec-destaque figure figcaption {  font-size: 0.7rem; }
+main .sec-destaque figure{ width: 100%;}
+
+main .sec-destaque-herois{ min-height: 500px;}
+main .sec-destaque-herois h2{padding: 1rem 0;  font-size: 1.5rem;}
+main .sec-destaque-herois article.slick-slide{width: 280px; margin: 0; }
+main .sec-destaque-herois article.slick-slide figure img{ height: 300px}
+main .sec-destaque-herois article.slick-slide figure figcaption{ padding: 0.5rem; font-size: 0.8rem;}
+main .sec-destaque-herois .carousel-controls .prev,
+main .sec-destaque-herois .carousel-controls .next{ top: 10rem;}
+main .sec-destaque-herois .carousel-controls .prev{left: 1rem; }
+main .sec-destaque-herois .carousel-controls .next{right: 1rem; }
+.slick-slider{padding: 0 3rem;}
+
+main .sec-form{padding: 2rem 0.5rem ;}
+main .sec-form form{ width: 100%; padding: 0.5rem 0.5rem 2rem 0.5rem;}
+main .sec-form form fieldset,
+main .sec-form form .container{width: 100%; }
+main .sec-form form fieldset h2, main .sec-form form fieldset p{padding-bottom: 1rem;}
+main .sec-form form fieldset p{font-size: 0.8rem;}
+
+
+
+
+}
