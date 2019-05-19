@@ -1,14 +1,45 @@
 /*800 1024*/
 @media (min-width: 650px) and (max-width: 1024px){
 
+  body {
+      background-size: 170%;
+      background-repeat: repeat;
+    }
 
   /*header*/
-  header{min-height: 220px;}
-  header .bx-heading        { height: 30px; }
-  header .bx-heading img    { height: 40px; position: relative;z-index: 4;}
+  header{min-height: 250px;}
+  header .bx-heading        { height: 50px; }
+  header .bx-heading img    { height: 60px; position: relative;z-index: 4;}
   header h1 { width: 100%; top: 0;}
-  header h1 span{ top: 7rem;  }
-  header h1 span img{ width: 30%;}
+  header h1 a { width: 100%;}
+  header h1 img{width: 30%;}
+  header h1 span{ top: 6rem; width: 100%;}
+  header h1 span img{ width: 15%;}
+
+
+
+  /*main*/
+  main .sec-destaque h2,
+  main .sec-destaque figure figcaption {  font-size: 1.5rem; }
+  main .sec-destaque figure{ width: 100%;}
+
+  main .sec-destaque-herois{ min-height: auto;}
+  main .sec-destaque-herois h2{padding: 1rem 0;  font-size: 1.5rem;}
+  main .sec-destaque-herois article.slick-slide{width: 350px; margin: 0 2rem; }
+  main .sec-destaque-herois article.slick-slide figure img{ height: auto;}
+  main .sec-destaque-herois article.slick-slide figure figcaption{ padding: 0.5rem; font-size:0.9rem;}
+  main .sec-destaque-herois .carousel-controls .prev,
+  main .sec-destaque-herois .carousel-controls .next{ top: 10rem;}
+  main .sec-destaque-herois .carousel-controls .prev{left: 1rem; }
+  main .sec-destaque-herois .carousel-controls .next{right: 1rem; }
+  .slick-slider{padding: 0 3rem;}
+
+  main .sec-form{padding: 10rem 4rem ;}
+  main .sec-form form{ width: 100%; padding: 0.5rem 0.5rem 2rem 0.5rem;}
+  main .sec-form form fieldset,
+  main .sec-form form .container{width: 80%; }
+  main .sec-form form fieldset h2, main .sec-form form fieldset p{padding-bottom: 1rem;}
+  main .sec-form form fieldset p{font-size: 1rem;}
 
 
 }

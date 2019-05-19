@@ -75,7 +75,7 @@ body{
 
   main .sec-destaque-herois .carousel-controls{ position: relative;z-index: 10;}
     main .sec-destaque-herois .carousel-controls .prev,
-    main .sec-destaque-herois .carousel-controls .next{ position: absolute; top: 15rem; cursor: pointer; font-size: 2rem;}
+    main .sec-destaque-herois .carousel-controls .next{ z-index: 10;position: absolute; top: 15rem; cursor: pointer; font-size: 2rem;}
     main .sec-destaque-herois .carousel-controls .prev{ left: 2rem;}
     main .sec-destaque-herois .carousel-controls .next{ right: 2rem;}
 
