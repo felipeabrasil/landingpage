@@ -98,15 +98,15 @@
     <!--css min -->
 
   </head>
-  <body ng-controller="dabCtrl">
+  <body itemscope itemtype="https://schema.org/CreativeWork" ng-controller="dabCtrl">
     <!-- Header -->
-    <header>
-      <h1>
-        <a href="#" title="HearthStone">
-          <img src="assets/img/hearthstone.png" alt="HearthStone">
+    <header role="heading">
+      <h1 itemscope itemtype="http://schema.org/Brand">
+        <a href="#" title="HearthStone" itemprop="url" >
+          <img src="assets/img/hearthstone.png" alt="HearthStone" itemprop="logo" role="img">
 
         </a>
-        <span><img src="assets/img/verso-carta.png" alt="Verso da Carta"></span>
+        <span><img src="assets/img/verso-carta.png" alt="Verso da Carta" role="img"></span>
       </h1>
 
 
@@ -114,13 +114,13 @@
     <!-- Header -->
 
     <!-- Main -->
-    <main>
+    <main role="main" aria-label="Conteúdo Principal" >
 
       <!-- Apresentação Destaque -->
-      <section class="sec-destaque">
+      <section class="sec-destaque" role="presentation" itemscope itemtype="https://schema.org/Game">
         <h2>Nova aventura para um jogador de Hearthstone</h2>
         <figure>
-          <img src="assets/img/o-assalto-do-seculo.png" alt="O Assalto do Século">
+          <img src="assets/img/o-assalto-do-seculo.png" alt="O Assalto do Século" role="img">
           <figcaption>
             Chegou a hora de colocar em prática o grande plano da Liga do MAL.
             Prepare-se para encarar os Defensores de Dalaran em Assalto a Dalaran,
@@ -131,7 +131,7 @@
       </section>
 
       <!-- Destaque Heróis -->
-      <section class="sec-destaque-herois">
+      <section class="sec-destaque-herois" role="slider" >
 
         <h2>Heróis</h2>
 
@@ -146,7 +146,7 @@
             <article class="">
               <h3>Jaina</h3>
               <figure>
-                <img src="assets/img/jaina.jpg" alt="Jaina">
+                <img src="assets/img/jaina.jpg" alt="Jaina" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -154,7 +154,7 @@
             <article class="">
               <h3>Garrosh</h3>
               <figure>
-                <img src="assets/img/garrosh.jpg" alt="Garrosh">
+                <img src="assets/img/garrosh.jpg" alt="Garrosh" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -162,7 +162,7 @@
             <article class="">
               <h3>Uther</h3>
               <figure>
-                <img src="assets/img/uther.jpg" alt="Uther">
+                <img src="assets/img/uther.jpg" alt="Uther" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -170,7 +170,7 @@
             <article class="">
               <h3>Jaina</h3>
               <figure>
-                <img src="assets/img/jaina.jpg" alt="Jaina">
+                <img src="assets/img/jaina.jpg" alt="Jaina" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -178,7 +178,7 @@
             <article class="">
               <h3>Garrosh</h3>
               <figure>
-                <img src="assets/img/garrosh.jpg" alt="Garrosh">
+                <img src="assets/img/garrosh.jpg" alt="Garrosh" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -186,7 +186,7 @@
             <article class="">
               <h3>Uther</h3>
               <figure>
-                <img src="assets/img/uther.jpg" alt="Uther">
+                <img src="assets/img/uther.jpg" alt="Uther" role="img">
                 <figcaption> Descrição do herói 01</figcaption>
               </figure>
             </article>
@@ -203,7 +203,7 @@
       <!-- Formulário -->
       <section class="sec-form">
 
-          <form  name="form" ng-submit="inserir()">
+          <form  name="form" ng-submit="inserir()" role="form" >
             <fieldset>
               <h2>Formulário</h2>
               <p>asdfasdfasdfasdfasd</p>
@@ -246,7 +246,7 @@
                   <input title="Enviar Mensagem" type="submit" value="{{btnName}}" ng-disable="form.$invalid" class="btn save"  >
                 </div>
               </div>
-              <div id="aviso" class="{{avisoclass}}"> {{msg}} </div>
+              <div id="aviso" class="{{avisoclass}}" role="alert" > {{msg}} </div>
             </div>
 
 
